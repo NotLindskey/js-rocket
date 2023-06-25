@@ -3,14 +3,14 @@ body {
 }
 
 .cool {
-  visibility: hidden;
+  visibility: visible;
   width: 100px;
   height: 100px;
-  background-color: green;
-  transition: background-color 2s;
+  background-color: rgb(214, 190, 214);
+  transition: background-color 4s;
 }
 
 .cool.red {
   visibility: visible;
-  background-color: red;
+  background-color: rgb(66, 66, 202);
 }

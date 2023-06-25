@@ -29,7 +29,7 @@ var changeState = function (state) {
       if (countDownNumber <= 0) {
         changeState(3);
       }
-    }, 500);
+    }, 1000);
   } else if (state == 3) {
     var success = setTimeout(function () {
       var randomNumber = Math.round(Math.random() * 10);
@@ -40,10 +40,12 @@ var changeState = function (state) {
       if (randomNumber > 4) {
         changeState(4);
       } else {
+        console.log('This is not the code you are looking for');
+
         changeState(5); // oh no!
       }
     }, 2000);
   }
 };
 
-console.log('hello?');
+console.log('Launch the rocket!');
