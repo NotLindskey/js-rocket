@@ -53,7 +53,7 @@ a:hover {
   position: absolute;
   bottom: 220px;
   left: 50%;
-  background: url('/img/nervous.png') no-repeat 0 0;
+  background: url('../img/nervous.png') no-repeat 0 0;
   width: 223px;
   height: 100px;
   margin-left: -180px;
