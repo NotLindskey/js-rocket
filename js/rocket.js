@@ -39,10 +39,11 @@ var changeState = function (state) {
       // success
       if (randomNumber < 3) {
         changeState(4);
+        console.log('Success, Try again!');
       } else {
         // oh no
-        console.log('Oh no! You got less than 3, Try again!');
-        console.log('This is not the code you are looking for');
+        console.log('Oh no! You have exploded, Try again!');
+        console.log('This is not the code you are looking for.');
 
         changeState(5); // oh no!
       }
@@ -50,4 +51,4 @@ var changeState = function (state) {
   }
 };
 
-console.log('Launch the rocket!');
+console.log('Launch your rocket!');
