@@ -1,10 +1,10 @@
 var timer = null;
-var countDownNumber = 10;
+var countDownNumber = 5;
 
 var changeState = function (state) {
   document.body.className = 'body-state' + state;
   clearInterval(timer);
-  countDownNumber = 10;
+  countDownNumber = 5;
   document.getElementById('countdown').innerHTML = countDownNumber;
 
   // countdown
@@ -13,13 +13,13 @@ var changeState = function (state) {
       countDownNumber = countDownNumber - 1;
       document.getElementById('countdown').innerHTML = countDownNumber;
 
-      if (countDownNumber > 3 && countDownNumber <= 7) {
+      if (countDownNumber > 3 && countDownNumber <= 5) {
         // be nervous
         document.getElementById('nervous').className = 'nervous show';
       } else {
         document.getElementById('nervous').className = 'nervous ';
       }
-      if (countDownNumber > 1 && countDownNumber <= 4) {
+      if (countDownNumber > 1 && countDownNumber <= 3) {
         // can't wait
         document.getElementById('cant-wait').className = 'cant-wait show';
       } else {
@@ -37,9 +37,11 @@ var changeState = function (state) {
       console.log('randomNumber: ', randomNumber);
 
       // success
-      if (randomNumber > 4) {
+      if (randomNumber < 3) {
         changeState(4);
       } else {
+        // oh no
+        console.log('Oh no! You got less than 3, Try again!');
         console.log('This is not the code you are looking for');
 
         changeState(5); // oh no!
