@@ -1,7 +1,7 @@
 // redirect you to the Launch page after 10sec idle
 setTimeout(function () {
   location.href = 'rocket.html';
-}, 10000);
+}, 30000);
 
 // this function does this.
 var doCoolStuff = function () {
